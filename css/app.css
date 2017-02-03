@@ -1,43 +1,23 @@
 body {
+    height: 100%;
     background: #f5f4f6;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     font-size: 13px;
-}
-body,
-html {
-    height: 100%;
 }
 
 #btn-buscar {
-    background-color: #63b144;
     border-color: #59a642;
-    color : white;
-	background: #00b268;
+    color: white;
+    background: #59a642;
+    outline: 0;
 }
 
 #btn-buscar:hover {
-	background: #007f4a;
-	border-color: #59a642;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(66, 123, 47, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(66, 123, 47, 0.6);
+    box-shadow: 0 0 8px rgba(66, 123, 47, 0.6);
 }
 
 .index-search-form {
     margin-top: 1em;
-}
-
-.index-search-form input[type="text"].form-control:nth-child(2),
-.index-search-form .input-group > .form-control,
-.index-search-form .input-group > .input-group-addon,
-.index-search-form .input-group > .input-group-btn > input[type="submit"] {
-    border: #00b268 1px solid;
-    /*border-radius: 0 2px 2px 0;*/
-}
-.index-search-form input[type="text"].form-control:nth-child(2) {
-    /*border-radius: 2px 0 0 2px;*/
-    border: #00b268 1px solid;
 }
 
 .fixed-column-form {
@@ -47,7 +27,11 @@ html {
 
 .form-control:focus {
     border-color: #59a642;
+    box-shadow: none;
+}
+
+.form-control:hover {
+    border-color: #59a642;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(66, 123, 47, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(66, 123, 47, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(66, 123, 47, 0.6);
 }
