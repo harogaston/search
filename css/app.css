@@ -1,7 +1,27 @@
+html {
+    height: 100%;
+}
+
 body {
     height: 100%;
     -webkit-font-smoothing: antialiased;
     font-size: 13px;
+}
+
+.background {
+    /* The image used */
+    background-image: url("../img/suse.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 800px;
+    min-width: 350px;
+    overflow-x: hidden;
 }
 
 #btn-buscar {
@@ -20,8 +40,11 @@ body {
 }
 
 .fixed-column-form {
-    width: 570px;
+    max-width: 570px;
+    width: 65%;
     margin: auto;
+    top: 40%;
+    position: relative;
 }
 
 .form-control:focus {

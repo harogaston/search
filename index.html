@@ -8,30 +8,31 @@
     <link rel="icon" href="favicon.ico">
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="css/app.css" type="text/css" rel="stylesheet">
+    <script>
+        buscar = function () {
+            document.getElementById('query').value = '';
+            return false;
+        }
+    </script>
 </head>
 
-<body id="search-index">
-<div style="display: block;" class="opensuse-search-page">
-    <div class="container-fluid">
-        <section>
-            <div class="row">
-                <div style="padding-top: 50px;" class="fixed-column-form text-center">
-                    <img src="img/lake.gif">
-                    <form id="searchForm" method="get" action="https://www.google.com/search" class="index-search-form"
-                          target="_blank">
-                        <div class="input-group">
-                            <input id="query" value="" name="q" class="form-control" placeholder="Buscar..." lang="en"
-                                   type="text" autocomplete="off" autofocus>
-                            <span class="input-group-btn">
-                                <button id="btn-buscar" class="btn btn-default" lang="en" type="submit"
-                                        onclick="setTimeout(function() {document.getElementById('query').value=''; return false;}, 100);">
-                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                            </span>
-                        </div>
-                    </form>
-                </div>
+<body>
+<div class="container-fluid background">
+    <div class="fixed-column-form text-center">
+        <!--<img src="img/lake.gif">-->
+        <form id="searchForm" method="get" action="https://www.google.com/search" class="index-search-form"
+              target="_blank">
+            <div class="input-group">
+                <input id="query" value="" name="q" class="form-control" placeholder="Buscar..." lang="en"
+                       type="text" autocomplete="off" autofocus>
+                <span class="input-group-btn">
+                    <button id="btn-buscar" class="btn btn-default" lang="en" type="submit"
+                            onclick="setTimeout(buscar, 100);">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                </span>
             </div>
-        </section>
+        </form>
     </div>
 </div>
 </body>
